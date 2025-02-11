@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>To-do list</title>
+    <link rel="stylesheet" href="style.css"><!--Linking CSS file-->
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Id4Mq28I0vUWogVP9cFN1U2drmHlxhpzPQ&s">
+</head>
+
 <body>
     <!-- Heading -->
-    <h1>Welcome!  <small><i><a href="https://www.youtube.com/watch?v=_GTqWBq01qI">Here's a song to start yr day!</a></h1></small>
+    <h1 class = "heading">Welcome!
+        <small><a href="https://www.youtube.com/watch?v=_GTqWBq01qI">
+            Here's a song to start yr day!</small></a>
+    </h1>
     <b><p title = "quote">Success is the sum of small efforts, repeated day in and day out.</p></b>
     <img src = "https://media.istockphoto.com/id/1381637603/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=w64j3fW8C96CfYo3kbi386rs_sHH_6BGe8lAAAFS-y4=" alt="scenary" width="500" height="300">
     
     <pre style = "color:rgb(238, 81, 107)"><em>Positive thoughts: Just do it! <del> I am lazy...</del></em></pre>
     <br>
+    <!-- Form: accepts user input -->
+    <form>
+        <label for = "username">Name</label>
+        <input type = "text" name = 
+        "username" id = "username" required>
+        <br>
+        <label for = "email">Email</label>
+        <input type = "email" name = "email" id = "email" required>
+    </form>
+
     <h1 style = "background-color: lightblue">To-do list:</h1>
     <hr>
     <!-- List -->
@@ -19,13 +38,54 @@
         Study
         Drink enough water, H<sub>2</sub>O <!-- Use 'target' attribute, so that link is opened on a new tab -->
         <a href="https://www.youtube.com/watch?v=enYITYwvPAQ&pp=ygUOZXhlcmNpc2UgdmlkZW8%3D" target = "_blank">Exercise</a>
-        Eat <ins>healthy</ins> dinner
+        Eat <ins style ="color:blueviolet">healthy</ins> dinner
     </i></pre>   
-    <small><em>You can do it!!</em></small>
-    <h3 style = color:red><p>Reward:<br></p></h3>
-    <pre>
-        <i>Watch a movie or series</i></pre>
     
-    <br>
+    <small><em>You can do it!! &#9829;</em></small>
 
+     <!--Description list-->
+    <dl>
+        <dt>Meal:</dt>
+        <dd>*Milk and boiled egg</dd>
+        <dt>Exercise:</dt>
+        <dd>*Push-ups and squats</dd>
+        <!--Embed video(iframe)-->
+        <iframe src="https://www.youtube.com/watch?v=eiMOxvZKyvM&pp=ygUYMTAgbWlucyBiZWdpbm5lciBwdXNoIHVw"
+        width="300" height="200" title="YouTube video player" style:border:none></iframe>
+    </dl>
+
+    <h3 style = color:red><p>Reward:<br></p></h3>
+    <ol> <!--Ordered list-->
+        <li><i>Watch a movie or series</li>
+        <li>Play games</li></i>
+        <li>Meet up with friends</li>
+    </ol>
+    <br>
+    <!--(Division: group elements together for styling purpose)-->
+    <div style = "color:green; background-color: rgb(231, 199, 159);">
+        <h3>Optional:</h3>
+        <ul> <!--List: ul(Unordered list with bullets)-->
+            <li>Read a book</li>
+            <li>Go for a walk</li>
+            <li>Learn something new</li>
+        </ul>
+    </div>
+    <br>
+    <!--Table: th(table header), tr(table row) td(table data)-->
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Task</th>
+        </tr>
+        <tr>
+            <td>6:00am</td>
+            <td>Wake up</td>
+        </tr>
+        <tr>
+            <td>10:30pm</td>
+            <td>Sleep</td>
+        </tr>
+    </table>
+    <br>
+</body>
 </html> 
