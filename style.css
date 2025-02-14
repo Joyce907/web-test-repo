@@ -1,13 +1,89 @@
-body{
-    background-color:bisque;
+body {
+    background-color: bisque;
+}
+
+.heading {
+    color: rgb(211, 98, 17);
+}
+
+.centered-section {
+    text-align: center;
+}
+
+#todolist {
+    border-style: outset;
+    border-width: 10px 5px;
+}
+
+#username, #email { /* style for input name field */
+    font-size: large;
+    font-weight: bold;
+    font-family:"Lucida Console", "Courier New", monospace;
+    color: blue;
+    background-color: whitesmoke;
+}
+
+#details {
+    border: rgb(186, 51, 51);
+    border-radius: 10px;
+    border-style: dashed dotted;
+    padding: 10px; /* set the space btw content & border  */
+}
+
+table,th,td {
     
+    border: 2px solid;
+    width: 50%;
+    border-collapse: collapse;
 }
-#username{/*style for input name field*/
-    font-size:larger;
-    font-weight:bold;
-    color:blue;
-    background-color:whitesmoke;
+
+th,td{
+    text-align: center;
+    padding:5px;
 }
-h1.heading{
-    color:rgb(211, 98, 17);
+
+tr:hover{
+    color: aliceblue;
+    background-color: rgb(211, 98, 17);
+}
+
+.dropdownbutton{ /* for the dropdown button */
+    background-color: lightcoral;
+    color: white;
+    padding: 13px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown{ /* for the whole dropdown section */
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu{ /* for the dropdown menu */
+    display: none; /*don't shown by default*/
+    position: absolute;
+    background-color: rgb(204, 198, 198);
+    min-width: 150px;
+}
+
+.dropdown-menu a{ /* for the anchor tag <a href> inside the dropdown menu */
+    color: rgb(235, 83, 83);
+    padding: 11px 15px;
+    text-align: center;
+    text-decoration: none; /* remove link underline */
+    display: block; /*change row to block*/
+}
+
+.dropdown-menu a:hover{
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-menu{ /* when hover on dropdown btn, show the dropdown menu */
+    display: block;
+}
+
+.dropdown:hover .dropdownbutton{ /* when hover on dropdown btn, change the btn color */
+    background-color: rgb(235, 83, 83);
 }

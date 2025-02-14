@@ -8,61 +8,66 @@
 
 <body>
     <!-- Heading -->
-    <h1 class = "heading">Welcome!
-        <small><a href="https://www.youtube.com/watch?v=_GTqWBq01qI">
-            Here's a song to start yr day!</small></a>
-    </h1>
-    <b><p title = "quote">Success is the sum of small efforts, repeated day in and day out.</p></b>
-    <img src = "https://media.istockphoto.com/id/1381637603/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=w64j3fW8C96CfYo3kbi386rs_sHH_6BGe8lAAAFS-y4=" alt="scenary" width="500" height="300">
-    
-    <pre style = "color:rgb(238, 81, 107)"><em>Positive thoughts: Just do it! <del> I am lazy...</del></em></pre>
-    <br>
-    <!-- Form: accepts user input -->
-    <form>
-        <label for = "username">Name</label>
-        <input type = "text" name = 
-        "username" id = "username" required>
-        <br>
-        <label for = "email">Email</label>
-        <input type = "email" name = "email" id = "email" required>
-    </form>
+    <div class="centered-section">
+        <section>
+            <h1 class="heading">Welcome!
+                <small><a href="https://www.youtube.com/watch?v=_GTqWBq01qI" target="_blank">
+                    Here's a song to start yr day!</small></a>
+            </h1>
+            <b><p title="quote">Success is the sum of small efforts, repeated day in and day out.</p></b>
+            <img src="https://media.istockphoto.com/id/1381637603/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=w64j3fW8C96CfYo3kbi386rs_sHH_6BGe8lAAAFS-y4=" alt="scenary" width="500" height="300">
+            
+            <pre style="color:rgb(238, 81, 107)"><em>Positive thoughts: Just do it! <del> I am lazy...</del></em></pre>
+            <br>
+            <!-- Form: accepts user input -->
+            <form>
+                <label for="username">Name</label>
+                <input type="text" name="username" id="username" required>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </form>
+        </section>
+    </div>
 
-    <h1 style = "background-color: lightblue">To-do list:</h1>
+    <h1 id="todolist" style="background-color: lightblue">To-do list:</h1>
     <hr>
     <!-- List -->
-    <h3><mark>Must do:</mark></h3><pre title = "task"><i>
-        Wake up early
-        Brush teeth
-        Eat breaksfast
-        Attend classes
-        Study
-        Drink enough water, H<sub>2</sub>O <!-- Use 'target' attribute, so that link is opened on a new tab -->
-        <a href="https://www.youtube.com/watch?v=enYITYwvPAQ&pp=ygUOZXhlcmNpc2UgdmlkZW8%3D" target = "_blank">Exercise</a>
-        Eat <ins style ="color:blueviolet">healthy</ins> dinner
+    <h3><mark>Must do:</mark></h3><pre title="task"><i>
+    Wake up early
+    Brush teeth
+    Eat breakfast
+    Attend classes
+    Study
+    Drink enough water, H<sub>2</sub>O <!-- Use 'target' attribute, so that link is opened on a new tab -->
+    <a href="https://www.youtube.com/watch?v=enYITYwvPAQ&pp=ygUOZXhlcmNpc2UgdmlkZW8%3D" target="_blank">Exercise</a>
+    Eat <ins style="color:blueviolet">healthy</ins> dinner
     </i></pre>   
     
     <small><em>You can do it!! &#9829;</em></small>
 
-     <!--Description list-->
-    <dl>
-        <dt>Meal:</dt>
-        <dd>*Milk and boiled egg</dd>
-        <dt>Exercise:</dt>
-        <dd>*Push-ups and squats</dd>
-        <!--Embed video(iframe)-->
-        <iframe src="https://www.youtube.com/watch?v=eiMOxvZKyvM&pp=ygUYMTAgbWlucyBiZWdpbm5lciBwdXNoIHVw"
-        width="300" height="200" title="YouTube video player" style:border:none></iframe>
-    </dl>
+    <!--Description list-->
+    <section>
+        <dl id="details">
+            <dt>Meal:</dt>
+            <dd>*Milk and boiled egg</dd>
+            <dt>Exercise:</dt>
+            <dd>*Push-ups and squats</dd>
+        </dl>
+    </section>
+    
+    <!--Embed video(iframe)-->
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/eiMOxvZKyvM" title="10 Minute Push-Up Progression Workout [Beginner Strength Training]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-    <h3 style = color:red><p>Reward:<br></p></h3>
+    <h3 style="color:red;"><p>Reward:<br></p></h3>
     <ol> <!--Ordered list-->
-        <li><i>Watch a movie or series</li>
-        <li>Play games</li></i>
-        <li>Meet up with friends</li>
+        <li><i>Watch a movie or series</i></li>
+        <li><i>Play games</i></li>
+        <li><i>Meet up with friends</i></li>
     </ol>
     <br>
     <!--(Division: group elements together for styling purpose)-->
-    <div style = "color:green; background-color: rgb(231, 199, 159);">
+    <div style="color:green; background-color: rgb(231, 199, 159);">
         <h3>Optional:</h3>
         <ul> <!--List: ul(Unordered list with bullets)-->
             <li>Read a book</li>
@@ -87,5 +92,15 @@
         </tr>
     </table>
     <br>
+    <!--Button: onclick event-->
+    <div class="dropdown">
+        <button class="dropdownbutton">Helpful videos</button>
+        <div class="dropdown-menu">
+            <a href="https://www.youtube.com/watch?v=wnHW6o8WMas&pp=ygUTbW90aXZhdGlvbmFsIHZpZGVvcw%3D%3D" target="_blank">Motivational Video</a>
+            <a href="https://www.youtube.com/watch?v=Y8HIFRPU6pM&pp=ygURaGVhbHRoeSBsaWZlc3R5bGU%3D" target="_blank">Kick start a Healthy lifestyle</a>
+            <a href="https://youtu.be/S_bON2ei8iA" target="_blank">Chill Lofi Music </a>
+        </div>
+    </div>    
+    <br>
 </body>
-</html> 
+</html>
